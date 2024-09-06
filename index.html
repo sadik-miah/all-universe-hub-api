@@ -7,19 +7,94 @@
     <title>All Universe Hub</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="https://kit.fontawesome.com/45a32aeb4a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <h1 class="text-3xl">All Universe Hub</h1>
+    <header class="">
+        <div class="flex flex-col items-center">
+            <h1 class="text-3xl font-bold mb-4">All Universe Hub</h1>
+            <button class="p-3 rounded-md bg-[#EB5757] text-white">Sort By Date</button>
+        </div>
     </header>
     <main>
+        <section class="mt-24 max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="card-container">
+
+            </div>
+
+            <!-- modal -->
+            <!-- Open the modal using ID.showModal() method -->
+
+            <dialog id="details_show_modal" class="modal modal-bottom sm:modal-middle relative">
+                <div class="modal-box">
+                    <div class="flex justify-between items-center bg-[#EB57570D] p-2">
+                        <div>
+                            <div>
+                                <h3 class="text-lg font-semibold">ChatGPT is an AI-powered chatbot platform that uses
+                                    OpenAI's GPT
+                                    technology to
+                                    simulate human conversation.</h3>
+                                <div class="flex space-x-2">
+                                    <div class="text-green-500 bg-white text-center p-3">
+                                        <h1>$10/month
+                                            Basic</h1>
+                                    </div>
+                                    <div class="text-red-500 bg-white text-center p-3">
+                                        <h1>$50/month
+                                            Pro</h1>
+                                    </div>
+                                    <div class="text-blue-500 bg-white text-center p-3">
+                                        <h1>Contact
+                                            us</h1>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div>
+                                        <h1>Features</h1>
+                                        <ol>
+                                            <li>I am student </li>
+                                            <li>I am student </li>
+                                            <li>I am student </li>
+
+                                        </ol>
+                                    </div>
+                                    <div>
+                                        <h1>Integrations</h1>
+                                        <ol>
+                                            <li>I am student </li>
+                                            <li>I am student </li>
+                                            <li>I am student </li>
+
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/Rectangle 15.png" alt="">
+                        </div>
+                    </div>
+
+
+                    <form method="dialog" class="absolute top-0 right-0">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="rounded-full"><i class="fa-solid text-3xl fa-circle-xmark"></i></button>
+                    </form>
+                </div>
+                </div>
+            </dialog>
+        </section>
+
 
     </main>
     <footer>
 
     </footer>
+
+
+
+    <script src="js/uniserse-hub.js"></script>
 </body>
 
 </html>
